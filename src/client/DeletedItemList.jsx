@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class ListItem extends React.Component {
+export default class DeletedItemList extends React.Component {
     constructor(){
         super();
     
