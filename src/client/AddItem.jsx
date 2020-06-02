@@ -45,7 +45,9 @@ export default class AddItem extends React.Component {
     }
     render() {
         var itemList = this.state.taskArray.map(function(task, index){
-        return <li key={index} className="list-group-item ml-0 task">{task.task}</li>
+        return <li key={index} className="list-group-item ml-0 task">{task.task} <span key={index} 
+        style={{cursor:"pointer"}}
+        className="float-right">❌</span></li>
         })
         return(
             <div className = "container">
