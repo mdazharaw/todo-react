@@ -11,6 +11,8 @@ class TodoApp extends React.Component {
       taskArray: [],
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    // this.handleDelete = this.handleDelete.bind(this);
+
   }
   
   createNewTask(taskString) {
@@ -29,15 +31,17 @@ class TodoApp extends React.Component {
     }
   }
 
-  handleDelete(index) {
-    console.log("deleted")
-  }
+  // handleDelete (index){
+  //   console.log(`Task ${index} deleted`)
+  //   let updatedArray = this.state.taskArray.splice(index,1);
+  //   this.setState({taskArray: updatedArray})
+  // }
 
   render() {
     return (
       <div>
         <Form handleSubmit={this.handleSubmit}/>
-        <ItemList taskArray={this.state.taskArray} 
+        <ItemList taskArray={this.state.taskArray.reverse()} 
         // handleDelete={this.handleDelete}
         />
       </div>

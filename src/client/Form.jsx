@@ -31,13 +31,13 @@ export default class Form extends React.Component {
   render() {
     
     return (
-      <div className="container">
+      <div className="container  pl-0 pr-0">
         <br></br>
         <h4>Add New Task:</h4>
-        <div className="input-group mb-3">
+        <div className="input-group mb-3 col-7 pl-0">
           <input
             type="text"
-            className="form-control col-6"
+            className="form-control "
             placeholder="Task description"
             aria-label="Task description"
             aria-describedby="addTasks"
